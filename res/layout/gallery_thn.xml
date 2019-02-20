@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+           android:adjustViewBounds="true"
+           android:maxWidth="50dip"
+           android:maxHeight="50dip"
+           android:scaleType="centerInside" android:id="@+id/imageThum"/>
+      
+      

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.tellfan"
+      android:versionCode="1" android:versionName="1.0.01">
+      
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:debuggable="true" android:name=".TellFan">
+<!-- 
+        <activity android:name="com.tellfan.MainActivity"
+                  android:label="@string/app_name"
+                  android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+ -->
+ 
+        <activity android:name=".Login"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+           
+        </activity>
+<!-- 
+      <activity android:name=".ImageGridActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>          
+        </activity>
+-->
+ 		<activity android:name=".activity.MainActivity" android:label="@string/app_name" >     
+        </activity>
+        <activity android:name=".activity.MainFirstActivity" android:label="@string/app_name" >     
+        </activity>
+        <activity android:name=".activity.MainFirstUserActivity" android:label="@string/app_name" >     
+        </activity>
+        <activity android:name=".activity.FansActivity" android:label="@string/app_name" >     
+        </activity>
+        <activity android:name=".activity.WallCelebsFriendsActivity" android:label="@string/app_name" >     
+        </activity>
+        <activity android:name=".activity.WallCelebsNetworksActivity" android:label="@string/app_name" >     
+        </activity>
+        <activity android:name=".activity.WallMyCelebsActivity" android:label="@string/app_name" >     
+        </activity>
+        <activity android:name=".activity.WallCelebsMeActivity" android:label="@string/app_name" >     
+        </activity>
+        <activity android:name=".activity.WallCelebsMeCommentActivity" android:label="@string/app_name" >     
+        </activity>
+        <activity android:name=".activity.WallMyCelebsNetworksActivity" android:label="@string/app_name" >     
+        </activity>
+        <activity android:name=".activity.WallMyCelebsMeActivity" android:label="@string/app_name" >     
+        </activity>
+        <activity android:name=".activity.WallMyCelebsMeCommentActivity" android:label="@string/app_name" >     
+        </activity>
+        <activity android:name=".activity.WallmeActivity" android:label="@string/app_name" >     
+        </activity>
+        <activity android:name=".activity.WallmediaActivity" android:label="@string/app_name" >     
+        </activity>
+        <activity android:name=".activity.WallfansActivity" android:label="@string/app_name" >     
+        </activity> 
+        <activity android:name=".activity.WallFansMeActivity" android:label="@string/app_name" >     
+        </activity>       
+        <activity android:name=".activity.ImageGridActivity" android:label="@string/app_name" >     
+        </activity>
+        <activity android:name=".activity.WallmecommentActivity" android:label="@string/app_name" >     
+        </activity>
+        <activity android:name=".activity.WallgalleryActivity" android:label="@string/app_name" >              
+        </activity>
+        <activity android:name=".activity.WallCelebmeMediaActivity" android:label="@string/app_name" >              
+        </activity> 
+        <activity android:name=".activity.WallCelebmegalleryActivity" android:label="@string/app_name" >              
+        </activity>  
+        <activity android:name=".activity.WallFansmeMediaActivity" android:label="@string/app_name" >              
+        </activity>             
+        <activity android:name=".activity.WallFansmegalleryActivity" android:label="@string/app_name" >              
+        </activity>           
+        <activity android:name=".Call" android:label="@string/call" >
+        </activity>
+         <activity android:name=".About" android:label="@string/about" >
+        </activity>
+		 <activity android:name=".Media" android:label="@string/media" >		 
+        </activity>
+         <activity android:name=".MediaInfo" android:label="@string/mediainfo" >
+        </activity>
+        
+         <activity android:name=".MediaShare" android:label="@string/app_name"  >
+             <intent-filter>
+    		  <action android:name="android.intent.action.SEND" />
+    			<category android:name="android.intent.category.DEFAULT" />
+    			<data android:mimeType="image/*" />
+    			<data android:mimeType="video/*" />
+  			</intent-filter> 
+        </activity>
+        <activity android:name=".CameraView" android:label="@string/camera" >
+        </activity>
+    </application>
+    <uses-sdk android:minSdkVersion="3" />   
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECORD_VIDEO"/>    
+    <uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
+	<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA" />    
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+</manifest> 

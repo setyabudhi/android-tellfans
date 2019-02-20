@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_height="fill_parent"
+    android:layout_width="fill_parent" android:background="@drawable/background">
+ 
+      <LinearLayout
+        android:id="@+id/header"
+        android:orientation="horizontal"
+        android:layout_height="44px"
+        android:layout_width="fill_parent"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/header_bg"      
+        android:weightSum="1">
+         <Button android:id="@+id/backBtn" android:layout_marginTop="5px" android:layout_marginBottom="5px"  android:layout_marginLeft="10px" android:background="@drawable/back_btn" android:layout_width="67dp" android:layout_height="match_parent" android:onClick="onBack" android:clickable="true"></Button>
+        <ImageView android:paddingLeft="40px" android:layout_height="wrap_content" android:layout_marginTop="7px" android:layout_marginBottom="7px" android:layout_width="wrap_content" android:layout_gravity="center|center_vertical|center_horizontal" android:src="@drawable/tellfan_logo_h30" android:id="@+id/imageView1" android:layout_weight="0.63"></ImageView>
+    	<Button android:id="@+id/homeBtn" android:layout_marginTop="5px" android:layout_marginBottom="5px"  android:layout_marginLeft="10px" android:background="@drawable/home_btn" android:layout_width="67dp" android:layout_height="match_parent" android:onClick="onHome" android:clickable="true"></Button>    </LinearLayout>
+     <LinearLayout
+        android:orientation="vertical"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent" 
+    	android:layout_below="@+id/header" 
+    	android:layout_above="@+id/footer" 
+    	android:weightSum="1"
+        android:background="#FFFFFFFF">
+         <LinearLayout android:layout_width="match_parent" android:id="@+id/linearLayout1" android:orientation="vertical" android:gravity="bottom" android:layout_height="match_parent">
+         	<Gallery android:id="@+id/gallery"
+             android:spacing="5dip"
+             android:layout_marginTop="5dip"
+             android:layout_marginBottom="5dip"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"/>
+          
+         	<ImageView android:id="@+id/photo"             
+               android:layout_width="fill_parent"
+               android:layout_height="fill_parent"
+               android:layout_marginTop="5dip"
+               android:layout_marginBottom="5dip"
+             />
+             
+             <VideoView android:id="@+id/video"             
+               android:layout_width="fill_parent"
+               android:layout_height="fill_parent"
+               android:layout_marginTop="5dip"
+               android:layout_marginBottom="5dip"
+             />
+    	</LinearLayout>
+    </LinearLayout>    
+    <!-- 
+     <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="49px"
+        android:layout_width="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/header_bg"
+        android:weightSum="1" android:id="@+id/footer">
+       
+       <ImageButton android:layout_marginTop="5px" android:layout_marginLeft="10px" android:layout_height="40px" android:layout_width="40px" android:src="@drawable/upload" android:id="@+id/uploadBtn" android:onClick="onUpload" android:clickable="true"></ImageButton>
+        <ImageButton android:layout_marginTop="5px" android:layout_height="40px" android:layout_width="40px" android:src="@drawable/call0" android:id="@+id/callBtn" android:onClick="onCall" android:clickable="true"></ImageButton>    	
+    </LinearLayout>
+ 	-->
+</RelativeLayout>

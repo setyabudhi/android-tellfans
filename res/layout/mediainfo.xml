@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/background" android:layout_height="fill_parent" android:layout_width="fill_parent"
+android:padding="30dip" android:orientation="horizontal"  > 
+
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical" android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_gravity="center">
+  
+   <TextView android:id="@+id/label" 
+              android:layout_width="fill_parent" 
+              android:layout_height="wrap_content" 
+              android:text="Caption:"
+              />
+
+    <EditText android:id="@+id/caption" 
+              android:layout_width="fill_parent" 
+              android:layout_height="wrap_content" 
+              android:background="@android:drawable/editbox_background"
+              android:layout_below="@id/label" 
+              android:singleLine="true"
+              android:imeOptions="actionNext"
+              />
+               <TextView android:id="@+id/label4" 
+              android:layout_width="fill_parent" 
+              android:layout_height="wrap_content" 
+              android:text=" " />
+      <Spinner android:id="@+id/spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawSelectorOnTop="true"
+        android:prompt="@string/purpose"
+    />
+    
+     <TextView android:id="@+id/label4" 
+              android:layout_width="fill_parent" 
+              android:layout_height="wrap_content" 
+              android:text=" " />
+              <LinearLayout android:orientation="vertical" android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_gravity="center" android:paddingLeft="50dip" android:paddingRight="50dip"> 
+              
+<Button android:id="@+id/upload_button" android:layout_width="fill_parent" android:layout_height="wrap_content"  android:background="@drawable/uploadbutton" />
+</LinearLayout>
+    <TextView android:id="@+id/label4" 
+              android:layout_width="fill_parent" 
+              android:layout_height="wrap_content" 
+              android:text=" " />
+              
+    
+</LinearLayout>
+</LinearLayout>

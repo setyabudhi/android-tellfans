@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout 
+ xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_height="fill_parent" 
+ android:layout_width="fill_parent"
+ android:background="#000044">
+ 
+ <TableRow>
+  <TextView android:id="@+id/imageText" android:text="Images" android:textColor="#ffffff" />
+ </TableRow>
+ 
+ <TableRow>
+  <TextView android:id="@+id/videoText"  android:text="Videos" android:textColor="#ffffff" />
+ </TableRow>
+ 
+</TableLayout>

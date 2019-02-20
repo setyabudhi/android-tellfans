@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:background="#FFFFFFFF">
+    <ImageView android:layout_height="wrap_content" android:src="@drawable/avatar" android:layout_width="wrap_content" android:id="@+id/fansimage"></ImageView>
+  <TextView
+  	  android:id="@+id/fanstext"
+  	  android:layout_height="wrap_content"
+	  android:layout_gravity="left|center_vertical" android:textSize="20dip" android:layout_marginLeft="10dip" android:layout_width="222dp"/>
+</LinearLayout>

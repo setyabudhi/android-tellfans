@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_height="fill_parent"
+    android:layout_width="fill_parent" android:background="@drawable/background">
+ 
+      <LinearLayout
+        android:id="@+id/header"
+        android:orientation="horizontal"
+        android:layout_height="44px"
+        android:layout_width="fill_parent"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/header_bg"      
+        android:weightSum="1">
+        <Button android:id="@+id/backBtn" android:layout_marginTop="5px" android:layout_marginBottom="5px"  android:layout_marginLeft="10px" android:background="@drawable/back_btn" android:layout_width="67dp" android:layout_height="match_parent" android:onClick="onBack" android:clickable="true"></Button>
+        <ImageView android:paddingLeft="40px" android:layout_height="wrap_content" android:layout_marginTop="7px" android:layout_marginBottom="7px" android:layout_width="wrap_content" android:layout_gravity="center|center_vertical|center_horizontal" android:src="@drawable/tellfan_logo_h30" android:id="@+id/imageView1" android:layout_weight="0.91"></ImageView>
+    	<Button android:id="@+id/homeBtn" android:layout_marginTop="5px" android:layout_marginBottom="5px"  android:layout_marginLeft="10px" android:background="@drawable/home_btn" android:layout_width="67dp" android:layout_height="match_parent" android:onClick="onHome" android:clickable="true"></Button>   	
+    </LinearLayout>
+ 
+     <LinearLayout
+        android:orientation="vertical"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent" 
+    	android:layout_below="@+id/header" 
+    	android:layout_above="@+id/footer" 
+    	android:weightSum="1"
+        android:background="#FFFFFFFF"
+        android:id="@+id/linearShoutout">
+        
+         <LinearLayout android:orientation="horizontal" android:background="#FFFFFFFF"  android:layout_width="match_parent" android:id="@+id/commentlayout" android:layout_height="52dp" android:gravity="center">
+             <EditText android:layout_height="wrap_content"  android:text="" android:layout_width="wrap_content" android:layout_weight="1" android:id="@+id/textShotout" >
+             </EditText>
+             <ImageView android:src="@drawable/plus" android:layout_width="wrap_content" android:id="@+id/imageView2" android:layout_height="35dp" ></ImageView>
+         </LinearLayout>
+          <LinearLayout android:orientation="horizontal" android:background="#FFEFEFEF"  android:layout_width="match_parent" android:id="@+id/commentlayout" android:layout_height="83dp" android:gravity="center" android:weightSum="1">
+     		<LinearLayout android:layout_height="match_parent" android:id="@+id/linearLayout2" android:layout_width="wrap_content" android:layout_weight="1">
+     			<ImageView android:layout_gravity="center_vertical" android:src="@drawable/avatar_1" android:layout_height="74dp" android:id="@+id/viewingimage" android:layout_width="52dp"></ImageView>
+     			<LinearLayout android:layout_height="match_parent" android:id="@+id/linearLayout3" android:layout_width="wrap_content" android:orientation="vertical" android:weightSum="1">
+     				<TextView android:autoLink="web" android:textSize="14px" android:gravity="center_vertical|center_horizontal" android:text="Viewing Darnerien McCants's Page" android:id="@+id/viewingname" android:layout_height="46dp" android:layout_width="261dp"></TextView>
+     				<LinearLayout android:gravity="center|center_vertical" android:orientation="horizontal" android:background="#FFEFEFEF" android:id="@+id/btnLayout" android:layout_width="240dp" android:layout_height="33dp">
+     					<Button android:text="Shoutout" android:layout_width="wrap_content" android:textSize="10dip" android:layout_height="wrap_content" android:id="@+id/button1" android:onClick="onShoutOut" android:clickable="true"></Button>
+     					<Button android:text="Photos" android:layout_width="wrap_content" android:textSize="10dip" android:layout_height="wrap_content" android:id="@+id/button2" android:onClick="onPhotos" android:clickable="true"></Button>
+     					<Button android:text="Subscribe" android:layout_width="wrap_content" android:textSize="10dip" android:layout_height="wrap_content" android:id="@+id/button3" android:visibility="gone" android:onClick="onSubscribe" android:clickable="true"></Button>
+     				</LinearLayout>
+     			</LinearLayout>
+     		</LinearLayout>
+ 
+         </LinearLayout>
+      
+         <LinearLayout android:layout_width="match_parent" android:id="@+id/linearLayout1" android:orientation="vertical" android:gravity="bottom" android:layout_height="match_parent">
+         	 <ListView  android:id="@+id/wallmedialist"
+        				android:layout_width="fill_parent"
+        				android:layout_height="fill_parent" 
+        				android:layout_weight="1"/>
+    	</LinearLayout>
+    </LinearLayout>    
+  <!-- 
+     <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="49px"
+        android:layout_width="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/header_bg"
+        android:weightSum="1" android:id="@+id/footer">
+        <ImageButton android:layout_marginTop="5px" android:layout_marginLeft="10px" android:layout_height="40px" android:layout_width="40px" android:src="@drawable/upload" android:id="@+id/uploadBtn" android:onClick="onUpload" android:clickable="true"></ImageButton>
+        <ImageButton android:layout_marginTop="5px" android:layout_height="40px" android:layout_width="40px" android:src="@drawable/call0" android:id="@+id/callBtn" android:onClick="onCall" android:clickable="true"></ImageButton>
+    </LinearLayout>
+ 	 -->
+</RelativeLayout>

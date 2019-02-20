@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, MainActivity!</string>
+    <string name="app_name">TellFan</string>
+    <string name="main_title">TellFan</string> 
+    <string name="login_label">Login</string>
+    <string name="about">About</string>
+    <string name="call">Call</string>
+    <string name="media">Media</string>
+    <string name="mediainfo">Media Info</string>
+    <string name="logout">Logout</string>
+    <string name="camera">Camera</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="purpose">Purpose</string>  	
+    <string name="rootmessageid">Rootid</string>
+    <string name="gallery">Photos</string>
+    <!--  																								
+    <string  name="url_login" >http://fan2.tellfan.com/m/upload/MediaUploaderLogin.ashx?email=%1$s&amp;pwd=%2$s</string> 
+    <string  name="url_login" >http://fan2.tellfan.com/services/M2Login.ashx</string> 
+
+    -->  
+    <string  name="url_clientoperation" >http://fan2.tellfan.com/services/ClientOperation.ashx</string>
+    <string  name="url" >http://fan2.tellfan.com</string>
+    <string  name="url_login" >http://fan2.tellfan.com/services/M2UserInfoHandler.ashx</string>   
+    <!--    
+    <string name="url_upload">http://fan2.tellfan.com/m/upload/MediaUploaderTest.ashx</string>
+    -->
+    <string name="url_upload">http://fan2.tellfan.com/services/MediaUploaderTest.ashx</string>
+    <string name="url_webview" >http://fan2.tellfan.com/m/bb-login.aspx?email=%1$s&amp;password=%2$s</string>
+    <string name="shoutout">shoutout</string>
+    
+    
+</resources>
